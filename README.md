@@ -1,6 +1,6 @@
 # go-memoizer
 
-A simple memoizer for Go.
+A simple thread-safe memoizer for Go using only the standard library.
 
 [![Reference](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/LightningDev1/go-memoizer)
 [![Linter](https://goreportcard.com/badge/github.com/LightningDev1/go-memoizer?style=flat-square)](https://goreportcard.com/report/github.com/LightningDev1/go-memoizer)
