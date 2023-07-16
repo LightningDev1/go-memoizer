@@ -7,7 +7,7 @@ A simple memoizer for Go.
 [![Build status](https://github.com/LightningDev1/go-memoizer/actions/workflows/ci.yml/badge.svg)](https://github.com/LightningDev1/go-memoizer/actions)
 
 ```go
-func expensiveFunction() *any {
+func expensiveFunction() (*any, error) {
     // ...
 }
 
