@@ -19,7 +19,7 @@ func TestMemoizer(t *testing.T) {
 	memoizer := NewMemoizer(function, time.Second*2)
 
 	first, _ := memoizer.Get()
-	
+
 	// The first call should be 1.
 	if *first != 1 {
 		t.Errorf("First call was not 1")
