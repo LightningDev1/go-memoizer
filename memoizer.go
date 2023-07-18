@@ -24,8 +24,8 @@ type Memoizer[T any] struct {
 	Value *T
 }
 
-// NewMemoizer creates a new memoizer.
-func NewMemoizer[T any](function func() (*T, error), invalidateAfter time.Duration) *Memoizer[T] {
+// New creates a new memoizer.
+func New[T any](function func() (*T, error), invalidateAfter time.Duration) *Memoizer[T] {
 	return &Memoizer[T]{
 		Function:        function,
 		InvalidateAfter: invalidateAfter,

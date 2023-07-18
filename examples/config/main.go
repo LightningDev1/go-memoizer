@@ -30,7 +30,7 @@ func GetConfig() (config *ProgramConfig, err error) {
 }
 
 // ConfigMemoizer is the memoizer for the config.
-var ConfigMemoizer = memoizer.NewMemoizer(GetConfig, time.Second*5)
+var ConfigMemoizer = memoizer.New(GetConfig, time.Second*5)
 
 func doSomething(i int) {
 	config, err := ConfigMemoizer.Get()

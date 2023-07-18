@@ -16,7 +16,7 @@ func TestMemoizer(t *testing.T) {
 		return &functionCalls, nil
 	}
 
-	memoizer := NewMemoizer(function, time.Second*2)
+	memoizer := New(function, time.Second*2)
 
 	first, _ := memoizer.Get()
 

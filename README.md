@@ -13,7 +13,7 @@ func expensiveFunction() (*any, error) {
     // ...
 }
 
-var memoizer = memoizer.NewMemoizer(expensiveFunction, 10*time.Second)
+var memoizer = memoizer.New(expensiveFunction, 10*time.Second)
 
 for i := 0; i < 50; i++ {
     value, err := memoizer.Get()
